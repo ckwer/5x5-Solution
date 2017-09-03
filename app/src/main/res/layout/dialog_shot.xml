@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Hoopick"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="3point, 현주엽, assist : 김건모"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="692dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_shot_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_goal_click"  />
+
+        <TextView
+            android:id="@+id/text_shot_foul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textSize="35sp" />
+
+        <ImageButton
+            android:id="@+id/button_shot_foul"
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_foul_click"  />
+
+        <ImageButton
+            android:id="@+id/button_shot_miss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_fail_click"  />
+
+    </LinearLayout>
+
+
+</LinearLayout>
